@@ -1,0 +1,8 @@
+<div class="lagend-container" [ngStyle]="{'grid-template-columns': gridColumns}">
+    <div *ngFor="let item of items" class="lagend-title">
+        <span>{{item.title}}</span>
+    </div>
+    <div *ngFor="let item of items" class="lagend-value">
+        <span [ngStyle]="{'color': item.valueColor}">{{item.value}}</span>
+    </div>        
+ </div>

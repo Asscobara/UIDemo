@@ -1,0 +1,13 @@
+<div class="ticket-container">
+    <div class="ticket-icon-background">
+        <img class="icon" src="../../../assets/images/sauce.png"/>
+    </div>
+    <div class="ticket-title">{{title}}</div>
+    <div class="ticket-value" [style.color]="valueColor">{{value}}%</div>
+    <div class="ticket-value-description">{{valueDescription}}</div>
+    <div class="ticket-experation-date">
+        <div>Expired</div>
+        <div>{{exprationDate | date:'short'}}</div>
+    </div>
+    <div class="ticket-background-value" [style.height]="valueHeight" [style.margin-top]="valueMargineTop"></div>
+</div>

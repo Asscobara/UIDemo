@@ -1,0 +1,25 @@
+.bar-container {
+    display: flex;
+    align-items: baseline;
+    width: 60px;
+    height: 180px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 29px rgba(196, 196, 196, 0.5);
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.bar-value {
+    width: 40px;
+    height: 164px;
+    background: #4686FF;
+    opacity: 1;
+    border-radius: 7px;
+    align-self: flex-end;
+    margin-block-end: 7px;
+    margin-inline-start: 9px;
+}
+
+.bar-legend {
+    margin-left: 2px;
+}

@@ -1,0 +1,9 @@
+<div class="donut-main-container">
+    <div class="donut-content">{{title}}</div>
+    <svg height="85%" width="85%" viewBox="0 0 120 120">       
+        <circle  *ngFor="let item of items;let i=index" cx="60" cy="60" r="50" fill="transparent" stroke-width="20"
+        [attr.stroke-dasharray]="getPerimeter(50)" [attr.stroke-dashoffset]="getOffset(50,i)" [attr.stroke]="getColor(i)"/>             
+     </svg>
+</div>
+<app-legend [items]="lagendItems()"></app-legend>
+

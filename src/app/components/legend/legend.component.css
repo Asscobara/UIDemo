@@ -1,0 +1,29 @@
+
+.lagend-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    margin-left: -50px;
+  }
+  
+  .lagend-value {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;  
+    text-align: center;
+  }
+  
+  .lagend-title {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }

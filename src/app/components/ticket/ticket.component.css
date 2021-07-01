@@ -1,0 +1,80 @@
+.ticket-container {
+    width: 180px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;    
+    border-radius: 10px;    
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-title {
+    height: 40px;
+    margin-top: 12px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #444444;
+}
+
+.ticket-value {
+    height: 54px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+}
+
+.ticket-value-description {
+    margin-top: -10px;
+    height: 27px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #444444;
+}
+
+.ticket-experation-date {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #444444;    
+    margin-top: 50px;
+}
+
+.ticket-background-value {
+    width: 180px;
+    height: 76px;
+    left: 0px;
+    top: 314px;
+    background: #E1E4E9;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
+}
+
+.ticket-icon-background {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 88px;
+}
+
+.icon {
+    margin-top: 20px;
+    margin-left: 15px;
+}

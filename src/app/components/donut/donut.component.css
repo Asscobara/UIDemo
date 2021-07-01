@@ -1,0 +1,36 @@
+.donut-main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 204px;
+    height: 204px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 29px rgba(196, 196, 196, 0.5);
+    border-radius: 141px;
+    text-align: -webkit-center;
+}
+
+.donut-content {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    width: 102px;
+    height: 102px;
+    left: 111px;
+    top: 133px;
+    line-height: 70px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 141px;
+    margin-left: 51px;
+    margin-top: 7px;
+}
+
+svg {
+    grid-row: 1;
+    grid-column: 1;
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);    
+    margin-top: 17px;
+
+}
