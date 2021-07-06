@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   public title = 'highpper-ui';
-  public donutValue: number = 5;
-  public secondDounatValue: number = 33;
-  public valueBarValue: number = 12;
-  public ticketValue: number = 11;
+  public donutValue = 5;
+  public secondDounatValue = 33;
+  public valueBarValue = 12;
+  public ticketValue = 11;
 
   ngOnInit() {
-    document.getElementById('file').onchange = (data) => {
-      console.log('change', data);
-    }
+  //  document.getElementById('file').onchange = (data) => {
+  //    console.log('change', data);
+  //  }
   }
   
 }

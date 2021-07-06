@@ -1,0 +1,40 @@
+.sensor-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.sensor-icon {
+    display: flex;
+}
+
+.sensor-title {
+    display: flex;
+}
+
+.sensor-circle {
+    width: 30px;
+    height: 30px;
+    /*
+    left: 483px;
+    top: 234px;
+    */
+    background: #FFFFFF;
+    /* Inner Shadow */
+
+    box-shadow: inset 0px 0px 29px rgba(196, 196, 196, 0.5);
+    border-radius: 141px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.sensor-circle-color {
+    /* Ellipse 1 */
+
+    width: 24px;    
+    height: 24px;
+    
+    border-radius: 120px;
+    margin-left: 3px;
+    margin-top: 3px;
+
+    background: #53EC62;
+}

@@ -11,6 +11,8 @@ import { LegendComponent } from './components/legend/legend.component';
 import { TicketComponent } from './components/ticket/ticket.component';
 import { CommonModule } from '@angular/common';
 import { MainShellComponent } from './components/main-shell/main-shell.component';
+import { SensorsComponent } from './components/sensors/sensors.component';
+import { SensorComponent } from './components/sensors/sensor/sensor.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MainShellComponent } from './components/main-shell/main-shell.component
     ValueBarComponent,
     LegendComponent,
     TicketComponent,
-    MainShellComponent
+    MainShellComponent,
+    SensorsComponent,
+    SensorComponent
   ],
   imports: [
     BrowserModule,

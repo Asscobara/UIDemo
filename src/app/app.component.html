@@ -1,11 +1,10 @@
-
-
-
 <app-main-shell>
   <h1>Playground</h1>
   
   <div class="flex" style="padding: 4px;">
-  
+    <app-card [title]="'sensor'" class="card">
+      <app-sensor></app-sensor>
+    </app-card> 
     <app-card [title]="'Control'" class="card">
       <label>Dounat Value 1</label>
       <input type="number" [(ngModel)]="donutValue"/>

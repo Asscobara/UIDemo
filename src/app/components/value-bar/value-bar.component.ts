@@ -10,8 +10,8 @@ export class ValueBarComponent implements OnInit, OnChanges {
 
   constructor() { }
   
-  @Input() public value: number = 33;
-  @Input() public title: string = 'title';
+  @Input() public value = 33;
+  @Input() public title = 'title';
 
   public height: string;
   public opacity: number;
@@ -22,7 +22,7 @@ export class ValueBarComponent implements OnInit, OnChanges {
   ngOnInit(): void {
   }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges(changes: SimpleChanges): void {
     const valuePrecentage = this.value / this.maxValue;
     const height = this.maxValueHeight * valuePrecentage;
     this.opacity = valuePrecentage ;

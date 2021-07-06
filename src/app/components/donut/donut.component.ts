@@ -8,13 +8,13 @@ import { ILagendData } from '../legend/legend.component';
 })
 export class DonutComponent implements OnChanges {
 
-  @Input() public value: number = 65;
-  @Input() public secondValue: number = 65;
-  @Input() public title: string = "test123";
-  @Input() public valueColor: string = "#53EC62";
-  @Input() public dunatColor: string = "#FF1647";
-  @Input() public valueTitle: string = "V1";
-  @Input() public secondValueTitle: string = "V2";
+  @Input() public value = 65;
+  @Input() public secondValue = 65;
+  @Input() public title = 'test123';
+  @Input() public valueColor = '#53EC62';
+  @Input() public dunatColor = '#FF1647';
+  @Input() public valueTitle = 'V1';
+  @Input() public secondValueTitle = 'V2';
 
   public dashArray: string;
 
@@ -37,7 +37,7 @@ export class DonutComponent implements OnChanges {
       color: this.dunatColor
     }];
 
-    this._total = this.items.map(a=>a.count).reduce((x,y)=>x+y);
+    this._total = this.items.map(a=>a.count).reduce((x,y) => x+y);
     
   }
 
