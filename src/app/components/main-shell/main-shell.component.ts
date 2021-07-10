@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
   selector: 'app-main-shell',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainShellComponent implements OnInit {
 
-  constructor() { }
+  constructor(private iconsService: IconsService) { }
 
   ngOnInit(): void {
   }

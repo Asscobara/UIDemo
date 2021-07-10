@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
@@ -13,6 +12,14 @@ import { CommonModule } from '@angular/common';
 import { MainShellComponent } from './components/main-shell/main-shell.component';
 import { SensorsComponent } from './components/sensors/sensors.component';
 import { SensorComponent } from './components/sensors/sensor/sensor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { TableComponent } from './components/table/table.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProductionComponent } from './components/production/production.component';
+import { ContainerUpdateComponent } from './components/container-update/container-update.component';
+import { ShellButtonComponent } from './components/shell-button/shell-button.component';
+import { CameraViewComponent } from './components/camera-view/camera-view.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +31,21 @@ import { SensorComponent } from './components/sensors/sensor/sensor.component';
     TicketComponent,
     MainShellComponent,
     SensorsComponent,
-    SensorComponent
+    SensorComponent,
+    TableComponent,
+    DashboardComponent,
+    ProductionComponent,
+    ContainerUpdateComponent,
+    ShellButtonComponent,
+    CameraViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

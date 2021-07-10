@@ -1,7 +1,10 @@
 <div class="sensor-container">
-    <div class="sensor-icon">icon</div>
+    <svg-icon class="sensor-icon" [name]="data.icon" [svgStyle]="{'width.px':16, 'height.px':16, 'padding.px':7}"></svg-icon>
     <div class="sensor-title">{{ data.title }}</div>
-    <div class="sensor-circle">
-        <div class="sensor-circle-color"></div>
+    <div *ngIf="data.value === null" class="sensor-circle">
+        <div class="sensor-inner-circle" [ngStyle]="{'background': data.color}"></div>
+    </div>
+    <div *ngIf="data.value !== null" class="sensor-value">
+        {{ data.value }}
     </div>
 </div>

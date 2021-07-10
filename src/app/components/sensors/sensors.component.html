@@ -1,6 +1,9 @@
-<app-card [title]="'Sensors'">
 
-    <app-sensor>    
-    </app-sensor>
-    
-</app-card>
+<div *ngFor="let group of data.groups">
+    <div class="group-title">{{ group.title }}</div>        
+    <div class="sensor-item" *ngFor="let sensor of group.sensors">
+        <app-sensor [data]="sensor">
+        </app-sensor>
+    </div>
+    <div class="sensor-item v-space"></div>
+</div>    

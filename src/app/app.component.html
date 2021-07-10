@@ -1,38 +1,3 @@
 <app-main-shell>
-  <h1>Playground</h1>
-  
-  <div class="flex" style="padding: 4px;">
-    <app-card [title]="'sensor'" class="card">
-      <app-sensor></app-sensor>
-    </app-card> 
-    <app-card [title]="'Control'" class="card">
-      <label>Dounat Value 1</label>
-      <input type="number" [(ngModel)]="donutValue"/>
-      <br/>
-      <label>Dounat Value 2</label>
-      <input type="number" [(ngModel)]="secondDounatValue"/>
-      <br/>
-      <label>ValueBar Value</label>
-      <input type="number" [(ngModel)]="valueBarValue"/>
-      <br/>
-      <label>Ticket Value</label>
-      <input type="number" [(ngModel)]="ticketValue"/>
-    </app-card>
-    
-    <app-card [title]="'Dounat'" class="card">
-      <app-donut [value]="donutValue" [secondValue]="secondDounatValue"></app-donut>
-    </app-card>
-  
-  
-    <app-card [title]="'Value bar'" class="card">
-      <div class="flex">
-        <app-value-bar [value]="valueBarValue"></app-value-bar>
-      </div>
-    </app-card>
-  
-    <app-card [title]="'Ticket'" class="card">
-      <app-ticket [value]="ticketValue"></app-ticket>
-    </app-card>
-    
-  </div>  
+  <app-dashboard></app-dashboard>
 </app-main-shell>

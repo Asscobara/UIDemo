@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
   selector: 'app-ticket',
@@ -7,8 +8,8 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 })
 export class TicketComponent implements OnInit, OnChanges {
 
-  @Input() public title: string = "Souce";
-  @Input() public icon: string = "";
+  @Input() public title: string = "Corn";
+  @Input() public icon: string = "ing_corn";
   @Input() public value: number = 17;
   @Input() public valueDescription: string = "1.5 kg";
   @Input() public exprationDate: Date = new Date();
@@ -34,7 +35,9 @@ export class TicketComponent implements OnInit, OnChanges {
     return "#4686FF";
   }
 
-  constructor() { }
+  constructor(private iconsService: IconsService) { 
+
+  }
   
   ngOnInit(): void {
     this.ngOnChanges(null);

@@ -11,6 +11,7 @@ export class DonutComponent implements OnChanges {
   @Input() public value = 65;
   @Input() public secondValue = 65;
   @Input() public title = 'test123';
+  @Input() public subTitle = 'sub';
   @Input() public valueColor = '#53EC62';
   @Input() public dunatColor = '#FF1647';
   @Input() public valueTitle = 'V1';

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
   selector: 'app-sensor',
@@ -7,12 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SensorComponent implements OnInit {
 
-  constructor() { 
+  constructor(private iconsService: IconsService) { 
     this.data = {
        id: 0,
-       title: 'title',
-       color: '#FFFF',
-       icon: 'camera' 
+       title: 'corn',
+       color: '#53EC62',
+       icon: 'ing_corn',
+       value: null
     }  
   }
 
@@ -28,4 +30,5 @@ export interface ISensor {
   title: string;
   icon: string;
   color: string;
+  value: number;
 }

@@ -1,0 +1,16 @@
+.group-title {
+    background-color: unset;
+    padding: 8px;
+}
+
+.v-space {
+    width: 260px;
+    height: 2px;
+    background: #EDF0F4;
+    padding-left: 4px;
+}
+
+.sensor-item {
+    margin-top: 10px;
+    width: 260px;
+}

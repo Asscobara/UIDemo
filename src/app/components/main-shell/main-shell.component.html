@@ -1,13 +1,27 @@
 <div class="main-shell-container">
 
-    <div class="shell-top-bar-container">
-        top bar
+    <div appResolutionFit class="shell-top-bar-icon">
+        <svg-icon class="logo-icon" [name]="'logo_img'" [svgStyle]="{'width.px':64, 'height.px':64, 'padding.px':1}"></svg-icon>
+        <div class="logo-text">HIGHPPER</div>
     </div>
-<!--
-    <div class="shell-side-bar-container">
-        <button>click here</button>
-    </div>
--->
-    <ng-content></ng-content>
 
+    <div class="shell-top-bar-container">
+        toolbar    
+    </div>
+
+    <div class="shell-side-bar-container">
+        <div class="shell-side-button">
+            <app-shell-button [title]="'Main page'" [icon]="'ing_corn'"></app-shell-button>
+        </div>
+        <div class="shell-side-button">
+            <app-shell-button [title]="'Pizza in production'" [icon]="'ing_corn'"></app-shell-button>
+        </div>
+        <div class="shell-side-button">
+            <app-shell-button [title]="'Container update'" [icon]="'ing_corn'"></app-shell-button>
+        </div>        
+    </div>
+
+    <div class="shell-content-container">
+        <ng-content></ng-content>
+    </div>
 </div>
