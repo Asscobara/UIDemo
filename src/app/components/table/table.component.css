@@ -1,0 +1,12 @@
+.table-container {
+    display: flex;
+}
+
+.table-header {
+    display: flex;
+}
+
+ .table-rows {
+     display: flex;
+ }
+  

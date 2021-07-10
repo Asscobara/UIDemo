@@ -1,0 +1,78 @@
+<div class="dashboard-container">
+
+    <app-card [title]="'Sensors'" class="card span-row-2">
+        <app-sensors></app-sensors>
+    </app-card>
+
+    <app-card [title]="'Performance'" class="card">
+        
+        <app-donut 
+            [title]="'Today'" 
+            [subTitle]="'05.11.2020'"
+            [value]="125" 
+            [valueTitle]="'Pizzas made'"
+            [secondValue]="4"
+            [secondValueTitle]="'Fialed Pizzas'">
+        </app-donut>
+        
+    </app-card>
+
+    <app-card [title]="'Type of dugh'" class="card">
+        
+        <app-donut 
+            [title]="'Today'" 
+            [subTitle]="'05.11.2020'"
+            [value]="85" 
+            [valueColor]="'#4686FF'"
+            [valueTitle]="'13” Thick'"
+            [secondValue]="40"
+            [dunatColor]="'#244583'"
+            [secondValueTitle]="'14” Thin'">
+        </app-donut>
+
+    </app-card>
+  
+    <app-card [title]="'Distribution by additions'" class="card span-col-2">
+        <div class="flex ticket-container">
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [value]="valueBarValue"></app-value-bar>
+          </div>
+    </app-card>
+  
+    <app-card [title]="'Ingredients'" class="card span-col-3">
+        <div class="flex ticket-container">
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [value]="ticketValue"></app-ticket>
+        </div>
+    </app-card>
+    
+  </div>  
+
+
+      <!--
+        <app-card [title]="'Control'" class="card">
+        <label>Dounat Value 1</label>
+        <input type="number" [(ngModel)]="donutValue"/>
+        <br/>
+        <label>Dounat Value 2</label>
+        <input type="number" [(ngModel)]="secondDounatValue"/>
+        <br/>
+        <label>ValueBar Value</label>
+        <input type="number" [(ngModel)]="valueBarValue"/>
+        <br/>
+        <label>Ticket Value</label>
+        <input type="number" [(ngModel)]="ticketValue"/>
+        </app-card>
+    -->

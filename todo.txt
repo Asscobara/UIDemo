@@ -1,0 +1,14 @@
+10/7/2021 - Hagay TODO list
+----------------------------
+1. UI Align 
+    - dashboard *
+    - production
+    - container update
+    - Main shell buttons *
+2. Add sreean state - navigate from main buttons (ng-content)
+3. Server integration
+    - JSON
+    - APIS
+4. Add popup component
+5. Add laguage support     
+

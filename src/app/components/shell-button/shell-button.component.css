@@ -1,0 +1,29 @@
+.button-container {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    background: #FDFDFD;
+    color: #4686FF;
+    margin-left: 20px;
+}
+
+.button-container :hover { 
+    background: #4686FF;
+    color: #FDFDFD;            
+}
+
+.selected {
+    background: #4686FF;
+    color: #FDFDFD;
+}
+
+.button-title {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: -30px;
+    max-width: 157px;
+}
