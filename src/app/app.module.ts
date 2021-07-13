@@ -20,6 +20,7 @@ import { ProductionComponent } from './components/production/production.componen
 import { ContainerUpdateComponent } from './components/container-update/container-update.component';
 import { ShellButtonComponent } from './components/shell-button/shell-button.component';
 import { CameraViewComponent } from './components/camera-view/camera-view.component';
+import { GridComponent } from './components/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CameraViewComponent } from './components/camera-view/camera-view.compon
     ProductionComponent,
     ContainerUpdateComponent,
     ShellButtonComponent,
-    CameraViewComponent
+    CameraViewComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

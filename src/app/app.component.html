@@ -1,3 +1,5 @@
-<app-main-shell>
-  <app-dashboard></app-dashboard>
+<app-main-shell (onViewStateCahnged)="viewState = $event">  
+  <app-dashboard *ngIf="viewState == 'main'"></app-dashboard>
+  <app-production *ngIf="viewState == 'prod'"></app-production>
+  <app-container-update *ngIf="viewState == 'container'"></app-container-update>
 </app-main-shell>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +15,7 @@ export class DashboardComponent implements OnInit {
   public donutValue: number = 43;
   public secondDounatValue: number = 11;
   
-  constructor() { }
+  constructor(public iconService: IconsService) { }
 
   ngOnInit(): void {
   }

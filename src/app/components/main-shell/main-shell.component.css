@@ -50,16 +50,6 @@
     height: 100px;
 }
 
-/*
-.selected {
-    background-color: #4686FF;
-}
-*/
-.shell-content-container {
-    grid-column: 2;
-    width: 98%;
-}
-
 .logo-icon {
     display: inline;
     margin-left: 6px;
@@ -71,9 +61,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
-
     letter-spacing: -0.5px;
-
     color: #244583;
     align-self: center;
     margin-top: -4px;

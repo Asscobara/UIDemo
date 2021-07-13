@@ -1,1 +1,9 @@
-<p>camera-view works!</p>
+
+<app-sensor [data]="sensor">
+
+</app-sensor>
+
+<video class="camera-view" controls (click)="toggleVideo()" #videoPlayer>
+    <source src="{{videoSource}}" type="video/mp4" />
+    Browser not supported
+</video>

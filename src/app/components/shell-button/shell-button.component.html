@@ -1,4 +1,14 @@
-<div class="button-container">
-    <svg-icon [name]="icon" [svgStyle]="{'margin.px':40}"></svg-icon>
-    <div class="button-title">{{title}}</div>
+<div class="button-container" (click)="onClick.emit()">
+    <svg-icon 
+        [ngClass]="{selected: selected}"
+        [name]="icon"
+        [svgStyle]="{'margin.px':40}">
+    </svg-icon>
+    <div class="button-title" [ngClass]="{selected: selected}">
+        {{title}}
+    </div>
 </div>
+
+<!--         [class]="'selected-svg'" 
+        [applyClass]="true"        
+-->

@@ -10,12 +10,23 @@ export class SensorsComponent implements OnInit {
 
   @Input() public data: ISensors;
 
+  public camData: any;
   constructor() { }
 
   public groups: ISensorsGroup;
 
   ngOnInit(): void {
     this.data = this.getMock();
+    this.camData = {
+     streamUrl: 'https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4', 
+     sensor: {
+      id: 0,
+      icon: 'sens_vbact',
+      color: '#53EC62',
+      title: 'VBACT',
+      value: null
+      }
+    };
   }
 
   private getMock(): ISensors {

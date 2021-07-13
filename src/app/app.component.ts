@@ -12,6 +12,8 @@ export class AppComponent implements OnInit {
   public valueBarValue = 12;
   public ticketValue = 11;
 
+  public viewState: string = 'main';
+
   ngOnInit() {
   //  document.getElementById('file').onchange = (data) => {
   //    console.log('change', data);

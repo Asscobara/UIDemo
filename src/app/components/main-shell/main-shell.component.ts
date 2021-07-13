@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
@@ -8,9 +8,13 @@ import { IconsService } from 'src/app/services/icons.service';
 })
 export class MainShellComponent implements OnInit {
 
+  @Output() public onViewStateCahnged = new EventEmitter<string>();
+  
   constructor(private iconsService: IconsService) { }
 
+  public viewState: 'main' | 'prod' | 'container';
   ngOnInit(): void {
+    this.viewState = 'main';
   }
 
 }

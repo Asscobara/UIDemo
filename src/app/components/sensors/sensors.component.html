@@ -6,4 +6,11 @@
         </app-sensor>
     </div>
     <div class="sensor-item v-space"></div>
-</div>    
+</div> 
+
+<div class="sensor-item">
+    <app-camera-view [sensor]="camData.sensor" [videoSource]="camData.streamUrl">
+    </app-camera-view>
+</div>
+
+

@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.grid-header-container {
+    display: grid;
+    grid-template-columns: repeat(auto);
+}
+
+.grid-header-item {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #444444;
+}
+
+.grid-body-container {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 29px rgba(196, 196, 196, 0.5);
+    border-radius: 10px;
+}
+
+.grid-body-line {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.grid-cell-item {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+}

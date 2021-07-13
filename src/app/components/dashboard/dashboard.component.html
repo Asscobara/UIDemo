@@ -1,10 +1,10 @@
 <div class="dashboard-container">
 
-    <app-card [title]="'Sensors'" class="card span-row-2">
+    <app-card [title]="'Sensors'" class="span-row-2">
         <app-sensors></app-sensors>
     </app-card>
 
-    <app-card [title]="'Performance'" class="card">
+    <app-card [title]="'Performance'">
         
         <app-donut 
             [title]="'Today'" 
@@ -17,7 +17,7 @@
         
     </app-card>
 
-    <app-card [title]="'Type of dugh'" class="card">
+    <app-card [title]="'Type of dugh'">
         
         <app-donut 
             [title]="'Today'" 
@@ -32,29 +32,29 @@
 
     </app-card>
   
-    <app-card [title]="'Distribution by additions'" class="card span-col-2">
+    <app-card [title]="'Distribution by additions'" class="span-col-2">
         <div class="flex ticket-container">
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
-            <app-value-bar [value]="valueBarValue"></app-value-bar>
+            <app-value-bar [title]="'Onion'" [value]="12"></app-value-bar>
+            <app-value-bar [value]="20"></app-value-bar>
+            <app-value-bar [value]="33"></app-value-bar>
+            <app-value-bar [value]="60"></app-value-bar>
+            <app-value-bar [value]="17"></app-value-bar>
+            <app-value-bar [value]="88"></app-value-bar>
+            <app-value-bar [value]="9"></app-value-bar>
+            <app-value-bar [value]="47"></app-value-bar>
+            <app-value-bar [value]="19"></app-value-bar>
           </div>
     </app-card>
   
-    <app-card [title]="'Ingredients'" class="card span-col-3">
+    <app-card [title]="'Ingredients'" class="span-col-3">
         <div class="flex ticket-container">
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
-            <app-ticket [value]="ticketValue"></app-ticket>
+            <app-ticket [title]="'Mashroom'" [icon]="'ing_mashroom'" [value]="12"></app-ticket>
+            <app-ticket [value]="23"></app-ticket>
+            <app-ticket [value]="44"></app-ticket>
+            <app-ticket [value]="34"></app-ticket>
+            <app-ticket [value]="23"></app-ticket>
+            <app-ticket [value]="44"></app-ticket>
+            <app-ticket [value]="3"></app-ticket>
         </div>
     </app-card>
     
