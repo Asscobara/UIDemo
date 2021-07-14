@@ -30,7 +30,6 @@
 }
 
 .ticket-value-description {
-    margin-top: -10px;
     height: 27px;
     font-family: Exo;
     font-style: normal;
@@ -49,7 +48,6 @@
     line-height: 21px;
     text-align: center;
     color: #444444;    
-    margin-top: 20px;
 }
 
 .ticket-background-value {
@@ -63,7 +61,6 @@
 }
 
 .ticket-icon-background {
-    margin-top: 20px;
     display: inline-block;
     width: 100px;
     height: 100px;

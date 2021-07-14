@@ -17,7 +17,7 @@ export class ValueBarComponent implements OnInit, OnChanges {
   public opacity: number;
 
   private readonly maxValue = 47;
-  private readonly maxValueHeight = 164;
+  private readonly maxValueHeight = 155;
   
   ngOnInit(): void {
   }

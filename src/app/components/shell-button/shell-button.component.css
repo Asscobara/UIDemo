@@ -15,7 +15,7 @@
 
 .selected-svg {
    /* color: #FDFDFD; */
-   color: teal;
+   fill: teal;
 }
 
 .un-selected-title {

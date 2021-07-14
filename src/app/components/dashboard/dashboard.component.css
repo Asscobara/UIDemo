@@ -1,11 +1,11 @@
 .dashboard-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto 0.3fr 0.3fr auto auto;
     grid-template-rows: 1fr 1fr;
     column-gap: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
     row-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;    
 }
 
 .card {
