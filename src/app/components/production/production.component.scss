@@ -1,0 +1,14 @@
+.production-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.grid-card {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { IconsService } from 'src/app/services/icons.service';
+import { IngredienceKeyMap } from 'src/app/utils/ui.utils';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
 
@@ -14,6 +15,11 @@ export class DashboardComponent implements OnInit {
 
   public donutValue: number = 43;
   public secondDounatValue: number = 11;
+  
+  public ingredientsViewState = 'dough';
+
+  public ingredienceKeyMap = IngredienceKeyMap;
+  public Object = Object;
   
   constructor(public iconService: IconsService) { }
 

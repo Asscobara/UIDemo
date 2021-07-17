@@ -4,7 +4,7 @@ import { ISensor } from './sensor/sensor.component';
 @Component({
   selector: 'app-sensors',
   templateUrl: './sensors.component.html',
-  styleUrls: ['./sensors.component.css']
+  styleUrls: ['./sensors.component.scss']
 })
 export class SensorsComponent implements OnInit {
 
@@ -21,9 +21,9 @@ export class SensorsComponent implements OnInit {
      streamUrl: 'https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4', 
      sensor: {
       id: 0,
-      icon: 'sens_vbact',
+      icon: 'sens_cam',
       color: '#53EC62',
-      title: 'VBACT',
+      title: 'Camera',
       value: null
       }
     };
@@ -41,9 +41,9 @@ export class SensorsComponent implements OnInit {
           value: null
         }, {
           id: 0,
-          icon: 'sens_drop',
+          icon: 'sens_cloud',
           color: '#53EC62',
-          title: 'Water Pressure',
+          title: 'Air Pressure',
           value: null
         }, {
           id: 0,

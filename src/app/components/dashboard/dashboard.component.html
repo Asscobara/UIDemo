@@ -12,7 +12,7 @@
             [value]="125" 
             [valueTitle]="'Pizzas made'"
             [secondValue]="4"
-            [secondValueTitle]="'Fialed Pizzas'">
+            [secondValueTitle]="'Failed Pizzas'">
         </app-donut>
         
     </app-card>
@@ -33,32 +33,110 @@
     </app-card>
   
     <app-card [title]="'Distribution by additions'" class="span-col-2">
-        <div class="flex ticket-container">
-            <app-value-bar [title]="'Onion'" [value]="12"></app-value-bar>
-            <app-value-bar [value]="20"></app-value-bar>
-            <app-value-bar [value]="33"></app-value-bar>
-            <app-value-bar [value]="30"></app-value-bar>
-            <app-value-bar [value]="17"></app-value-bar>
-            <app-value-bar [value]="47"></app-value-bar>
-            <app-value-bar [value]="9"></app-value-bar>
-            <app-value-bar [value]="47"></app-value-bar>
-            <app-value-bar [value]="19"></app-value-bar>
-          </div>
+        <div class="ticket-container">
+            <app-value-bar class="ticket-item" [title]="'Onion'" [value]="12"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="20"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="33"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="30"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="17"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="47"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="9"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="47"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="19"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="19"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="19"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="19"></app-value-bar>
+            <app-value-bar class="ticket-item" [value]="19"></app-value-bar>
+        </div>
     </app-card>
   
-    <app-card [title]="'Ingredients'" class="span-col-3">
-        <div class="flex ticket-container">
-            <app-ticket [title]="'Mashroom'" [icon]="'ing_mashroom'" [value]="12"></app-ticket>
-            <app-ticket [value]="23"></app-ticket>
-            <app-ticket [value]="44"></app-ticket>
-            <app-ticket [value]="34"></app-ticket>
-            <app-ticket [value]="23"></app-ticket>
-            <app-ticket [value]="44"></app-ticket>
-            <app-ticket [value]="3"></app-ticket>
-        </div>
+    <app-card [title]="'Ingredients'" [cardActions]="ingredientsCardActions" class="span-col-3">
+        <ng-container 
+        [ngTemplateOutlet]="ingredientsViewState == 'dough' ? ingredientsStateDough : 
+                            ingredientsViewState == 'toppings' ? ingredientsStateToppings :
+                            ingredientsViewState == 'cunsumbles' ? ingredientsStateCunsumbles : ingredientsStateDrinksSalads">
+    </ng-container>
+
     </app-card>
     
   </div>  
+
+  <ng-template #ingredientsCardActions>
+      <div class="ingredients-card-actions">
+        <app-shell-button 
+            [selected]="ingredientsViewState == 'dough'" 
+            (onClick)="ingredientsViewState = 'dough'"
+            [small]="true"
+            [title]="'Dough'">
+        </app-shell-button>
+        <app-shell-button 
+            [selected]="ingredientsViewState == 'toppings'" 
+            (onClick)="ingredientsViewState = 'toppings'"
+            [small]="true"
+            [title]="'Toppings'">
+        </app-shell-button>
+        <app-shell-button 
+            [selected]="ingredientsViewState == 'cunsumbles'" 
+            (onClick)="ingredientsViewState = 'cunsumbles'"
+            [small]="true"
+            [title]="'Cunsumbles'">
+        </app-shell-button>
+        <app-shell-button 
+            [selected]="ingredientsViewState == 'drinksSalads'" 
+            (onClick)="ingredientsViewState = 'drinksSalads'"
+            [small]="true"
+            [title]="'Drinks-Salads'">
+        </app-shell-button>
+      </div>
+  </ng-template>
+
+  <ng-template #ingredientsStateDough>
+    <div class="ticket-container">
+        <app-ticket class="ticket-item" [title]="'Mashroom'" [icon]="'ing_mashroom'" [value]="12"></app-ticket>
+        <app-ticket class="ticket-item" [value]="23"></app-ticket>
+        <app-ticket class="ticket-item" [value]="44"></app-ticket>
+        <app-ticket class="ticket-item" [value]="34"></app-ticket>
+        <app-ticket class="ticket-item" [value]="23"></app-ticket>
+        <app-ticket class="ticket-item" [value]="44"></app-ticket>
+        <app-ticket class="ticket-item" [value]="3"></app-ticket>
+    </div>
+  </ng-template>
+
+  <ng-template #ingredientsStateToppings>
+    <div class="flex ticket-container">
+        <app-ticket class="ticket-item" [title]="'Mashroom'" [icon]="'ing_mashroom'" [value]="12"></app-ticket>
+        <app-ticket class="ticket-item" [value]="50"></app-ticket>
+        <app-ticket class="ticket-item" [value]="44"></app-ticket>
+        <app-ticket class="ticket-item" [value]="13"></app-ticket>
+        <app-ticket class="ticket-item" [value]="5"></app-ticket>
+        <app-ticket class="ticket-item" [value]="20"></app-ticket>
+        <app-ticket class="ticket-item" [value]="31"></app-ticket>
+    </div>
+  </ng-template>
+
+  <ng-template #ingredientsStateCunsumbles>
+    <div class="ticket-container">
+        <app-ticket class="ticket-item" [title]="'Mashroom1'" [icon]="'ing_mashroom'" [value]="12"></app-ticket>
+        <app-ticket class="ticket-item" [value]="21"></app-ticket>
+        <app-ticket class="ticket-item" [value]="3"></app-ticket>
+        <app-ticket class="ticket-item" [value]="5"></app-ticket>
+        <app-ticket class="ticket-item" [value]="57"></app-ticket>
+        <app-ticket class="ticket-item" [value]="3"></app-ticket>
+        <app-ticket class="ticket-item" [value]="2"></app-ticket>
+    </div>
+  </ng-template>
+
+  <ng-template #ingredientsStateDrinksSalads>
+    <div class="ticket-container">
+        <app-ticket *ngFor="let key of Object.keys(ingredienceKeyMap)" 
+                    class="ticket-item" 
+                    [title]="ingredienceKeyMap[key].title" 
+                    [icon]="ingredienceKeyMap[key].icon" 
+                    [value]="12">
+            </app-ticket>
+    </div>
+  </ng-template>
+
 
 
       <!--

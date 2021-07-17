@@ -18,11 +18,19 @@ export class IconsService {
     this.iconRegistry.loadSvg(`${this.basePath}logo/logo_image.svg`, 'logo_img').subscribe();
     // #endregion
 
+    // #region shell
+    this.iconRegistry.loadSvg(`${this.basePath}shell/main_page.svg`, 'shl_main').subscribe();
+    this.iconRegistry.loadSvg(`${this.basePath}shell/prod.svg`, 'shl_prod').subscribe();
+    this.iconRegistry.loadSvg(`${this.basePath}shell/container_update.svg`, 'shl_container').subscribe();
+    // #endregion
+
     // #region ingredience
     this.iconRegistry.loadSvg(`${this.basePath}ingredience/corn.svg`, 'ing_corn').subscribe();
     this.iconRegistry.loadSvg(`${this.basePath}ingredience/mashroom.svg`, 'ing_mashroom').subscribe();
     this.iconRegistry.loadSvg(`${this.basePath}ingredience/olives.svg`, 'ing_olives').subscribe();
     this.iconRegistry.loadSvg(`${this.basePath}ingredience/onion.svg`, 'ing_onion').subscribe();
+    this.iconRegistry.loadSvg(`${this.basePath}ingredience/cheese.svg`, 'ing_cheese').subscribe();    
+    this.iconRegistry.loadSvg(`${this.basePath}ingredience/sauce.svg`, 'ing_sauce').subscribe();    
     //#endregion
 
     // #region sensors

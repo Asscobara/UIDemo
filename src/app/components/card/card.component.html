@@ -2,6 +2,11 @@
     <div class="flex">
         <div class="card-title-border"></div>    
         <div class="card-title">{{title}}</div>
+        <div *ngIf="cardActions" class="card-actions">
+            <ng-container [ngTemplateOutlet]="cardActions">            
+            </ng-container>
+        </div>
+        
     </div> 
     <div class="card-content">
         <ng-content>        

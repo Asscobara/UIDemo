@@ -1,11 +1,11 @@
-<div class="button-container" (click)="onClick.emit()" [ngClass]="{selected: selected}">
+<div class="button-container" (click)="onClick.emit()" [ngClass]="{selected: selected, 'button-small':small, 'button-big': !small}">
     <svg-icon 
         [class]="'selected-svg'" 
         [applyClass]="selected" 
         [name]="icon"
         [svgStyle]="{'margin.px':40, 'fill': selected ? '#FDFDFD': '#4686FF'}">
     </svg-icon>
-    <div class="button-title" [ngClass]="{selected: selected}">
+    <div class="button-title" [ngClass]="{'un-selected-title': !selected, 'button-title-no-icon': icon == null}">
         {{title}}
     </div>
 </div>

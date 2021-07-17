@@ -5,7 +5,8 @@
 
 .grid-header-container {
     display: grid;
-    grid-template-columns: repeat(auto);
+    grid-template-columns: repeat(auto-fit, 200px);
+    margin-bottom: 18px;
 }
 
 .grid-header-item {
@@ -16,6 +17,8 @@
     line-height: 28px;
     text-align: center;
     color: #444444;
+    justify-self: left;
+    margin-left: 12px;
 }
 
 .grid-body-container {
@@ -25,9 +28,13 @@
 }
 
 .grid-body-line {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
     background: #FFFFFF;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin: 8px;
+    padding-left: 8px;
 }
 
 .grid-cell-item {

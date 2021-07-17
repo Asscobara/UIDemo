@@ -4,7 +4,7 @@ import { ILagendData } from '../legend/legend.component';
 @Component({
   selector: 'app-value-bar',
   templateUrl: './value-bar.component.html',
-  styleUrls: ['./value-bar.component.css']
+  styleUrls: ['./value-bar.component.scss']
 })
 export class ValueBarComponent implements OnInit, OnChanges {
 
@@ -12,10 +12,15 @@ export class ValueBarComponent implements OnInit, OnChanges {
   
   @Input() public value = 33;
   @Input() public title = 'title';
+  @Input() public horizontal = false;
+  @Input() public showLegend = true;
+  @Input() public useOpacity = true;
+  @Input() public showPrecentage = false;
 
-  public height: string;
+  public height = '40px';
+  public width = '40px';
   public opacity: number;
-
+  public valuePrecentage: number;
   private readonly maxValue = 47;
   private readonly maxValueHeight = 155;
   
@@ -24,9 +29,14 @@ export class ValueBarComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     const valuePrecentage = this.value / this.maxValue;
+    this.valuePrecentage = valuePrecentage * 100;
     const height = this.maxValueHeight * valuePrecentage;
-    this.opacity = valuePrecentage ;
-    this.height = `${height}px`;
+    this.opacity = this.useOpacity ? valuePrecentage : 1;
+    if (this.horizontal) {
+      this.width = `${height}px`;
+    } else {
+      this.height = `${height}px`;
+    }    
   }
 
   public lagendItems(): ILagendData[] {

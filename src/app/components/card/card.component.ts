@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { SafeMethodCall } from '@angular/compiler';
+import { Component, OnInit, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
 
   @Input() public title = 'Performance';
   @Input() public size: CARD_SIZE;
+  @Input() public cardActions: TemplateRef<any>;
   
   constructor() { 
     this.size = CARD_SIZE.small;

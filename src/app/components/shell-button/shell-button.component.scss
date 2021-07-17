@@ -1,8 +1,17 @@
+.button-big {
+    width: 160px;
+    height: 160px;
+}
+
+.button-small {
+   height: 40px;
+   width: auto;
+   margin-top: 51px;
+}
+
 .button-container {
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 160px;
-    height: 160px;
     background: #FDFDFD;
     margin-left: 20px;
     cursor: pointer;
@@ -20,7 +29,6 @@
 
 .un-selected-title {
     color: #4686FF;
-    background-color: #FDFDFD;
 }
 
 .button-title {
@@ -31,4 +39,8 @@
     line-height: 22px;
     margin-top: -30px;
     max-width: 157px;
+}
+
+.button-title-no-icon {
+    padding: 10px;
 }

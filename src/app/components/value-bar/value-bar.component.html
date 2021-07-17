@@ -1,5 +1,12 @@
-<div class="bar-container">
-    <div class="bar-value" [style.height]="height" [style.opacity]="opacity">        
+<div class="bar-container"
+     [ngClass]="{'hor-bar-container': horizontal, 'ver-bar-container': !horizontal}">
+    <div class="bar-value" 
+        [ngClass]="{'hor-bar-container': horizontal, 'ver-bar-container': !horizontal}"
+        [style.height]="height"
+        [style.width]="width" 
+        [style.opacity]="opacity">                
+        <div *ngIf="showPrecentage" class="precentage-value">{{ valuePrecentage | number : '1.0-0' }}%</div>
     </div>
+    
 </div>
-<app-legend class="bar-legend" [items]="lagendItems()"></app-legend>
+<app-legend *ngIf="showLegend" class="bar-legend" [items]="lagendItems()"></app-legend>

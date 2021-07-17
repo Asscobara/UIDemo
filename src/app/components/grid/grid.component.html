@@ -1,20 +1,14 @@
 <div class="grid-container">
-
     <div class="grid-header-container">
-        <div class="grid-header-item">item</div>  <!-- ngFor -->  
-        <div class="grid-header-item">item 2</div>  <!-- ngFor -->  
+        <div class="grid-header-item" *ngFor="let header of mockData.headers">
+            {{header.title}}
+        </div>
     </div>
-
-
     <div class="grid-body-container">
-        <div class="grid-body-line">
-            <div class="grid-cell-item"> <!-- ngFor -->
-                cell item
-            </div>
-            <div class="grid-cell-item"> <!-- ngFor -->
-                cell item 2
+        <div class="grid-body-line" *ngFor="let line of mockData.lines" >
+            <div class="grid-cell-item" *ngFor="let d of line.data"> 
+                {{d}}
             </div>
         </div>    
     </div>
-
 </div>

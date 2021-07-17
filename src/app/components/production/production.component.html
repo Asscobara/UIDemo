@@ -1,6 +1,21 @@
 <div class="production-container">
 
-    <app-card [title]="'Grid test'">
+    <app-card [title]="'Card test'">
+        <input type="number" [(ngModel)]="testValue"/>
+        <app-value-bar 
+            [showLegend]="false" 
+            [useOpacity]="false"
+            [showPrecentage]="true"
+            [horizontal]="true" 
+            [value]="testValue">
+        </app-value-bar>        
+    </app-card>
+    
+    <app-card [title]="'Card test'">
+        second card
+    </app-card>
+
+    <app-card class="grid-card" [title]="'Table test'">
         <app-grid></app-grid>
     </app-card>
 

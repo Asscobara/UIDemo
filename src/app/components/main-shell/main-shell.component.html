@@ -10,13 +10,12 @@
     </div>
 
     <div class="shell-side-bar-container">
-
         <div class="shell-side-button">
             <app-shell-button 
                 [selected]="viewState == 'main'" 
                 (onClick)="viewState = 'main'; onViewStateCahnged.emit(viewState);"
                 [title]="'Main page'" 
-                [icon]="'ing_corn'">
+                [icon]="'shl_main'">
             </app-shell-button>
         </div>
         <div class="shell-side-button">
@@ -24,7 +23,7 @@
                 [selected]="viewState == 'prod'" 
                 (onClick)="viewState = 'prod'; onViewStateCahnged.emit(viewState);"
                 [title]="'Pizza in production'" 
-                [icon]="'ing_corn'">
+                [icon]="'shl_prod'">
             </app-shell-button>
         </div>
         <div class="shell-side-button">
@@ -32,7 +31,7 @@
                 [selected]="viewState == 'container'" 
                 (onClick)="viewState = 'container'; onViewStateCahnged.emit(viewState);"
                 [title]="'Container update'" 
-                [icon]="'ing_corn'">
+                [icon]="'shl_container'">
             </app-shell-button>        
         </div>        
     </div>

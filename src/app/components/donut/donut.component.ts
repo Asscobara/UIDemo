@@ -4,7 +4,7 @@ import { ILagendData } from '../legend/legend.component';
 @Component({
   selector: 'app-donut',
   templateUrl: './donut.component.html',
-  styleUrls: ['./donut.component.css']
+  styleUrls: ['./donut.component.scss']
 })
 export class DonutComponent implements OnChanges {
 
